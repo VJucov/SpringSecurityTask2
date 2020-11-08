@@ -48,4 +48,11 @@ VALUES
 ('susan','ROLE_EMPLOYEE'),
 ('susan','ROLE_ADMIN');
 
+ -- Added a new user into DB
+ INSERT INTO users VALUES
+('lily', '{bcrypt}$2a$04$KP9Agm8IrnI3jf/bAUkO/Oun4.9/I3HV54dV.ThmB86fjtg5nkjyq',1);
 
+INSERT INTO authorities
+VALUES
+('lily','ROLE_EMPLOYEE'),
+('lily','ROLE_MANAGER');
